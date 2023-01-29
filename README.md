@@ -1,2 +1,2 @@
 # dom_assignment
-![taskone_output](https://github.com/ravikntkr/dom_assignment/blob/main/task1Output.png)
+![taskoneoutput](https://github.com/ravikntkr/dom_assignment/blob/main/firstAssignmentImage/task1Output.png?raw=true)
