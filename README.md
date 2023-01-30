@@ -88,3 +88,42 @@ inputTextRestore.placeholder = "Search";
 
 ```
 
+### Task 5
+### Restore paragraph span text, Hero avtar image and adding a [Support Me] Button.
+![task5Output](https://user-images.githubusercontent.com/97457589/215519183-a354b270-38a6-4a39-973b-c5f753f2ec2a.png)
+
+```
+
+// Restore paragraph span text as original
+
+let heroAboutSpan1Restore = document.querySelector(
+  ".hero-section .hero-left-section p span:nth-child(3)"
+);
+heroAboutSpan1Restore.innerText = "a Freelancer";
+
+let heroAboutSpan2Restore = document.querySelector(
+  ".hero-section .hero-left-section p span:nth-child(5)"
+);
+heroAboutSpan2Restore.innerText = "National and International Client.";
+
+// Restore avtar image
+
+let authorImageRestore = document.querySelector(
+  ".hero-section .hero-right-section img"
+);
+
+authorImageRestore.src = "./avtar.png";
+
+// Add a [Support me] button
+
+let supportMeBtn = document.createElement("button");
+let supportMeBtnTxt = document.createTextNode("Support Me");
+supportMeBtn.appendChild(supportMeBtnTxt);
+
+let supportMe = document.querySelector(
+  ".hero-section .hero-right-section .hero-right-section-btns"
+);
+supportMe.appendChild(supportMeBtn);
+
+```
+
