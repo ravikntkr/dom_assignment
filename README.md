@@ -1,4 +1,6 @@
 # dom_assignment
+### Main Preview
+
 
 ## Question 1
 ### Task 1
@@ -25,6 +27,8 @@ lastitems.innerText = "Projects";
 let removesocial = document.querySelector("footer ul");
 removesocial.remove();
 ```
+### Task 2
+
 ![task2Output](https://user-images.githubusercontent.com/97457589/215342512-c72050e0-1ff9-477a-944c-a30e011f351e.png)
 
 ```
