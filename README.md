@@ -1,6 +1,6 @@
 # dom_assignment
 
-## Main Preview
+## Questin 1 Main Preview
 
 ![orignal](https://user-images.githubusercontent.com/97457589/215492345-0eb81740-876f-4512-83cd-e868535c28de.png)
 
@@ -127,3 +127,32 @@ supportMe.appendChild(supportMeBtn);
 
 ```
 
+## Questin 2 Main Preview
+![orignal](https://user-images.githubusercontent.com/97457589/215530350-ee60d7cf-1985-4135-9a71-0fa3330d7be9.png)
+
+## Question 2
+### Task 1
+### Changing Accordian background color.
+![task1Output](https://user-images.githubusercontent.com/97457589/215530564-74092f46-ed5d-4c45-b390-cbebaa1cf45e.png)
+
+```
+// Change H3 background color
+
+let accordianH3Color = document.querySelectorAll(".accordian h3");
+for (let i = 0; i < accordianH3Color.length; i++) {
+  accordianH3Color[i].style.background = "#dadaf8";
+}
+
+// Change Accordian background color
+
+let accordianPColor = document.querySelectorAll(".accordian");
+for (let i = 0; i < accordianPColor.length; i++) {
+  accordianPColor[i].style.background = "#edf1fd";
+}
+
+// Change contact button to [Project]
+
+let lastitems = document.querySelector("header nav ul li:nth-child(3)");
+lastitems.innerText = "Project";
+
+```
