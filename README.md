@@ -156,3 +156,60 @@ let lastitems = document.querySelector("header nav ul li:nth-child(3)");
 lastitems.innerText = "Project";
 
 ```
+### Task 1
+### Adding accordian
+![task2Output](https://user-images.githubusercontent.com/97457589/215682917-b24980bd-ca5f-4a24-9477-32c6417262a6.png)
+
+```
+// Adding accordian
+
+let accordianAdd = document.createElement("div");
+let accordianWrapper = document.querySelector(".accordian-wrapper");
+accordianWrapper.appendChild(accordianAdd);
+
+// adding class name in new accordian
+
+let element = document.querySelector(".accordian-wrapper div:last-child");
+element.classList.add("accordian");
+
+// Adding H3 inside accordian
+
+let addH3 = document.createElement("h3");
+let addH3text = document.createTextNode("Skills");
+addH3.appendChild(addH3text);
+
+let accordianHeading = document.querySelector(
+  ".accordian-wrapper .accordian:last-child"
+);
+accordianHeading.appendChild(addH3);
+
+addH3.style.background = "#dadaf8";
+
+// Adding Paragraph inside accordian
+
+let addpara = document.createElement("p");
+let addptext = document.createTextNode(
+  "I posses a very good command over the Full Stack Development technologies like MERN which can be seen in my work over the Github"
+);
+addpara.appendChild(addptext);
+
+let accordianpara = document.querySelector(
+  ".accordian-wrapper .accordian:last-child"
+);
+accordianpara.appendChild(addpara);
+
+// Add click function in last accordian
+
+let lastAccordian = document.querySelectorAll(".accordian:last-child h3");
+lastAccordian.forEach((element) => {
+  element.addEventListener("click", () => {
+    let para = element.nextElementSibling;
+    if (para.style.display === "block") {
+      para.style.display = "none";
+    } else {
+      para.style.display = "block";
+    }
+  });
+});
+
+```
