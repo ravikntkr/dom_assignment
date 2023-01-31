@@ -156,7 +156,7 @@ let lastitems = document.querySelector("header nav ul li:nth-child(3)");
 lastitems.innerText = "Project";
 
 ```
-### Task 1
+### Task 2
 ### Adding accordian
 ![task2Output](https://user-images.githubusercontent.com/97457589/215682917-b24980bd-ca5f-4a24-9477-32c6417262a6.png)
 
